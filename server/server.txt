@@ -1,0 +1,2 @@
+Class-Path: server.jar
+Main-Class: server.accept.Main
