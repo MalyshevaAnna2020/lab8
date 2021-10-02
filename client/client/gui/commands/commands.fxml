@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ComboBox?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="1200" style="-fx-background-color: #CCCCCC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.commands.ControlCommands">
+   <left>
+            <VBox fx:id="vBox" alignment="CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810" prefWidth="262.0" spacing="7.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="current_user" fill="#321cd9" strokeType="OUTSIDE" strokeWidth="0.0" text="%current_user" BorderPane.alignment="CENTER_LEFT">
+                     <BorderPane.margin>
+                        <Insets left="85.0" top="10"/>
+                     </BorderPane.margin>
+                  </Text>
+                  <ComboBox fx:id="comboBox" onAction="#changeLanguage" style="-fx-background-color: #99CCFF;">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="English (United Kingdom)" />
+                           <String fx:value="Русский" />
+                           <String fx:value="Latviešu" />
+                           <String fx:value="Português" />
+                        </FXCollections>
+                     </items>
+                     <value>
+                        <String fx:value="English (United Kingdom)" />
+                     </value>
+                  </ComboBox>
+                  <JFXButton fx:id="help" onAction="#getHelp" buttonType="RAISED" prefWidth="220.0" style="-fx-background-color: #99CCFF; -fx-wrap-text: true;" text="%help" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="info" onAction="#getInfo" buttonType="RAISED" prefWidth="220.0" style="-fx-background-color: #99CCFF; -fx-wrap-text: true;" text="%info" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="show" onAction="#getShow" buttonType="RAISED" prefWidth="220.0" style="-fx-background-color: #99CCFF; -fx-wrap-text: true;" text="%show" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="insert" onAction="#getInsert" buttonType="RAISED" prefWidth="220.0" style="-fx-background-color: #99CCFF; -fx-wrap-text: true;" text="%insert" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="update" onAction="#getUpdate" buttonType="RAISED" prefWidth="220.0" style="-fx-background-color: #99CCFF; -fx-wrap-text: true;" text="%update" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="remove_key" onAction="#getRemoveKey" buttonType="RAISED" prefWidth="220.0" style="-fx-background-color: #99CCFF; -fx-wrap-text: true;" text="%remove_key" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="clear" onAction="#getClear" buttonType="RAISED" prefWidth="220.0" style="-fx-background-color: #99CCFF; -fx-wrap-text: true;" text="%clear" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="execute_script" onAction="#getExecuteScript" buttonType="RAISED" prefWidth="220.0" style="-fx-background-color: #99CCFF; -fx-wrap-text: true;" text="%execute_script" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="remove_lower" onAction="#getRemoveLower" buttonType="RAISED" prefWidth="220.0" style="-fx-background-color: #99CCFF; -fx-wrap-text: true;" text="%remove_lower" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="remove_greater_key" onAction="#getRemoveGreaterKey" buttonType="RAISED" prefWidth="220.0" style="-fx-background-color: #99CCFF; -fx-wrap-text: true;" text="%remove_greater_key" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="remove_lower_key" onAction="#getRemoveLowerKey" buttonType="RAISED" prefWidth="220.0" style="-fx-background-color: #99CCFF; -fx-wrap-text: true;" text="%remove_lower_key" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="remove_any_by_chapter" onAction="#getRemoveAnyByChapter" buttonType="RAISED" prefWidth="220.0" style="-fx-background-color: #99CCFF; -fx-wrap-text: true;" text="%remove_any_by_chapter" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="filter_greater_than_achievements" onAction="#getFilterGreaterThanAchievements" buttonType="RAISED" prefWidth="220.0" style="-fx-background-color: #99CCFF; -fx-wrap-text: true;" text="%filter_greater_than_achievements" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="print_field_descending_category" onAction="#getPrintFieldDescendingCategory" buttonType="RAISED" prefWidth="220.0" style="-fx-background-color: #99CCFF; -fx-wrap-text: true;" text="%print_field_descending_category" textAlignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding></VBox>
+   </left>
+   <center>
+      <Text fill="#ff3333" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="800" BorderPane.alignment="TOP_CENTER">
+         <BorderPane.margin>
+            <Insets top="100.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+      </Text>
+   </center>
+</BorderPane>
